@@ -2,7 +2,7 @@
 
 package org.yourcompany.yourproject;
 
-public class CSProject {
+public class TicketBookingSystemMain {
 
     public static void main(String[] args) {
        
