@@ -1,6 +1,6 @@
 package org.yourcompany.yourproject;
 
-public class Ticket {
+public class Ticket implements EventOperations {
     private double price;
     private String name;
     private String ticketType;
@@ -53,6 +53,10 @@ public class Ticket {
     public void setTicketId(int ticketId) {
         this.ticketId = ticketId;
     }
+     @Override
+     public double calculatePrice() {
+    return price + (price * TAX);
+     }
 
     public boolean checkAvailability(int count) {
         return count > 0 && availableQuantity >= count;
